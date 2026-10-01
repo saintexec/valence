@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --color-valence-lime: #C7FF4D;
+  --color-valence-dark: #070709;
+  --color-valence-surface: #121216;
+}
+
+:root {
+  --background: #070709;
+  --foreground: #f4f4f5;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), monospace;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), sans-serif;
+  letter-spacing: -0.03em;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
