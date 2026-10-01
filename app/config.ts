@@ -3,5 +3,5 @@ export const config = {
   tagline: "Malaysia-first pilot · For SaaS, automations & B2B services",
   email: "hello@valence.my",
   whatsapp: "+60123456789",
-  formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT || "https://script.google.com/macros/s/AKfycbzyffAAtCOR-w1bGDng5BO7j2ZGhUN_9_Ps0YuStZNUBzMvhdlEYzvIo4U-BXmFBIdoBA/exec",
+  formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT || "https://script.google.com/macros/s/AKfycbxlL8bJ-VrbHpnBFqoETRR-W1bNIcaqwCiYOLoIXcS0LrHQ7UVz29bcz7dDPLt9AkqU8w/exec",
 };
